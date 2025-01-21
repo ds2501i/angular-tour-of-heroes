@@ -1,0 +1,27 @@
+<!-- <div *ngIf="messageService.messages.length">
+
+    <h2>Messages</h2>
+    <button class="clear"
+            (click)="messageService.clear()">clear</button>
+    <div *ngFor='let message of messageService.messages'> {{message}} </div>
+  
+  </div> -->
+
+  <div *ngIf="messageService.messages.length">
+
+        <h2>Messages</h2>
+        
+        <button class="clear" (click)="messageService.clear()">Clear</button>
+        
+        <div *ngIf="!showAllMessages">
+          {{ messageService.messages[messageService.messages.length - 1] }}
+          <a href="#" (click)="toggleShowAllMessages($event)">See all messages</a>
+        </div>
+        
+        <div *ngIf="showAllMessages">
+          <div *ngFor="let message of messageService.messages">{{ message }}</div>
+          <a href="#" (click)="toggleShowAllMessages($event)">Show latest message</a>
+        </div>
+      
+      </div>
+      

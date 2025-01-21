@@ -1,0 +1,33 @@
+/* AppComponent's private CSS styles */
+/* h1 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+} */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between links */
+  margin: 20px 0; /* Adds some margin above and below the nav */
+}
+
+/* Style the links */
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  border-color: #007bff;
+  color: #0056b3;
+}
